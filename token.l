@@ -8,7 +8,7 @@
 "then" {printf("THEN");}
 "while" {printf("THEN");}
 "<"|">" {printf("RELOP");}
-[a-zA-Z][a-z|0-9]* {printf("IDENTIFIER");}
+[a-zA-Z0-9][a-z|0-9]* {printf("IDENTIFIER");}
 "("|")" {printf("bracket");}
 [0-9]+ {printf("NUMBER");}
 "./" {exit(0);}
